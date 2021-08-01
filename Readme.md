@@ -12,8 +12,11 @@ Use of 3rd party libraries is allowed. Please consider unit testing and other co
 
 Please submit completed work to a github repository and provide the link to your DT contact.
 
+## APK
+[APK](apk/app-debug.apk)
+
 ## Screens
 
-                    Splash                |                  Main                 |                Details                     |
------------------------------------------ | ------------------------------------- |--------------------------------------------|
-![Splash Screen](screenshots/splash.png)  | ![Main Screen](screenshots/main.png)  | ![Details Screen](screenshots/details.png) |
+                    Splash                  |                  Main                   |                Details
+<img src="screenshots/splash.png" alt="Splash" width="190"/> | <img src="screenshots/main.png" alt="Main" width="190"/> | <img src="screenshots/details.png" alt="details" width="190"/>
+
