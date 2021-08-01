@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingVertical="@dimen/screen"
+	android:background="@color/dark"
+	android:clickable="true"
+	tools:ignore="SmallSp">
+
+	<ImageView
+		android:id="@+id/image"
+		android:layout_width="@dimen/product_image_height"
+		android:layout_height="0dp"
+		android:padding="@dimen/pad"
+		android:importantForAccessibility="no"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/name"
+		app:layout_constraintBottom_toBottomOf="@id/rating"
+		app:layout_constraintDimensionRatio="1:1"/>
+
+	<TextView
+		android:id="@+id/name"
+		android:fontFamily="casual"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/margin"
+		android:layout_marginHorizontal="@dimen/margin"
+		android:ellipsize="end"
+		android:textColor="@color/white"
+		android:textSize="18sp"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/image"/>
+
+	<TextView
+		android:id="@+id/ratingLabel"
+		android:fontFamily="casual"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginVertical="@dimen/two"
+		android:layout_marginHorizontal="@dimen/margin"
+		android:textColor="@color/white"
+		android:textSize="12sp"
+		android:text="@string/ratings"
+		app:layout_constraintTop_toBottomOf="@id/name"
+		app:layout_constraintStart_toEndOf="@+id/image" />
+
+	<TextView
+		android:id="@+id/ratingCount"
+		android:fontFamily="casual"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginVertical="@dimen/two"
+		android:layout_marginHorizontal="@dimen/six"
+		android:textColor="@color/white"
+		android:textSize="12sp"
+		app:layout_constraintTop_toBottomOf="@id/name"
+		app:layout_constraintStart_toEndOf="@+id/ratingLabel" />
+
+	<TextView
+		android:id="@+id/downloadLabel"
+		android:fontFamily="casual"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginVertical="@dimen/two"
+		android:layout_marginHorizontal="@dimen/margin"
+		android:textColor="@color/white"
+		android:textSize="12sp"
+		android:text="@string/downloaded"
+		app:layout_constraintTop_toBottomOf="@id/ratingCount"
+		app:layout_constraintStart_toEndOf="@+id/image"/>
+
+	<TextView
+		android:id="@+id/downloadCount"
+		android:fontFamily="casual"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginVertical="@dimen/two"
+		android:layout_marginHorizontal="@dimen/six"
+		android:textColor="@color/white"
+		android:textSize="12sp"
+		app:layout_constraintTop_toBottomOf="@id/ratingCount"
+		app:layout_constraintStart_toEndOf="@+id/downloadLabel"/>
+
+	<TextView
+		android:id="@+id/categoryLabel"
+		android:fontFamily="casual"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginVertical="@dimen/four"
+		android:layout_marginHorizontal="@dimen/margin"
+		android:textColor="@color/white"
+		android:textSize="16sp"
+		android:text="@string/category"
+		app:layout_constraintTop_toBottomOf="@+id/name"
+		app:layout_constraintEnd_toStartOf="@id/category"/>
+
+	<TextView
+		android:id="@+id/category"
+		android:fontFamily="casual"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginVertical="@dimen/four"
+		android:layout_marginHorizontal="@dimen/margin"
+		android:textColor="@color/white"
+		android:textSize="16sp"
+		app:layout_constraintTop_toBottomOf="@+id/name"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<RatingBar
+		android:id="@+id/rating"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/pad"
+		android:layout_marginHorizontal="@dimen/pad"
+		android:numStars="5"
+		android:stepSize=".5"
+		android:rating="5"
+		app:layout_constraintTop_toBottomOf="@id/downloadCount"
+		app:layout_constraintStart_toEndOf="@+id/image"
+		style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+	<Button
+		android:id="@+id/install"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/pad"
+		android:text="@string/install"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/description"/>
+
+	<TextView
+		android:id="@+id/description"
+		android:fontFamily="casual"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginVertical="@dimen/vertical_margin"
+		android:layout_marginHorizontal="@dimen/margin"
+		android:textColor="@color/white"
+		android:textSize="16sp"
+		app:layout_constraintTop_toBottomOf="@id/image"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

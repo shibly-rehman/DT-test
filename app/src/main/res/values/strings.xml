@@ -1,0 +1,10 @@
+<resources>
+	<string name="app_name">DT-Test</string>
+	<string name="author">Shibly Rehman</string>
+	<string name="category">Category:</string>
+	<string name="description">Coding Assessment</string>
+	<string name="digital_turbine">Digital Turbine</string>
+	<string name="downloaded">Downloaded:</string>
+	<string name="ratings">Ratings:</string>
+	<string name="install">Install</string>
+</resources>
