@@ -17,6 +17,6 @@ Please submit completed work to a github repository and provide the link to your
 
 ## Screens
 
-        Splash       |        Main         |      Details
+          Splash         |        Main         |      Details
 <img src="screenshots/splash.png" alt="Splash" width="190"/> | <img src="screenshots/main.png" alt="Main" width="190"/> | <img src="screenshots/details.png" alt="details" width="190"/>
 
