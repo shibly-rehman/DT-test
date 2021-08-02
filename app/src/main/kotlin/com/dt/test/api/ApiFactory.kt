@@ -23,6 +23,7 @@ object ApiFactory {
 
         // XML parser
         // SimpleXmlConverter deprecated but alternative not available on android
+        @Suppress("DEPRECATION")
         val xmlConverter = SimpleXmlConverterFactory.create()
 
         // retrofit

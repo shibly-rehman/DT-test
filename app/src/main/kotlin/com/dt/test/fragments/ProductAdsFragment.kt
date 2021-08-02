@@ -16,7 +16,7 @@ import com.dt.test.viewmodels.ProductAdsViewModel
 import kotlinx.android.synthetic.main.fragment_products.*
 
 /** Display's a list of product ads */
-class ProductsFragment: Fragment() {
+class ProductAdsFragment: Fragment() {
 
     private val adapter: ProductAdsAdapter by lazy { ProductAdsAdapter {
         // Open product detail fragment

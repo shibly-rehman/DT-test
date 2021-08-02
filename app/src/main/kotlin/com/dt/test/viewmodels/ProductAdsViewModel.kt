@@ -1,13 +1,10 @@
 package com.dt.test.viewmodels
 
+import android.app.Application
 import android.util.Log
 import android.widget.Toast
-import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModel
+import androidx.lifecycle.*
 import com.dt.test.Constants
-import com.dt.test.DTApp
 import com.dt.test.api.ApiFactory
 import com.dt.test.model.ProductAds
 import retrofit2.Call
@@ -17,7 +14,7 @@ import retrofit2.Response
 /**
  * ViewModel to handle product ads call
  */
-class ProductAdsViewModel: ViewModel(), Callback<ProductAds> {
+class ProductAdsViewModel(app: Application): AndroidViewModel(app), Callback<ProductAds> {
 
     private val data = MutableLiveData<ProductAds>()
 
@@ -31,7 +28,7 @@ class ProductAdsViewModel: ViewModel(), Callback<ProductAds> {
     }
 
     override fun onFailure (call: Call<ProductAds>, t: Throwable) {
-        Toast.makeText(DTApp.context, t.localizedMessage, Toast.LENGTH_LONG).show()
+        Toast.makeText(getApplication(), t.localizedMessage, Toast.LENGTH_LONG).show()
         Log.e(TAG, t.localizedMessage ?: "")
     }
 
