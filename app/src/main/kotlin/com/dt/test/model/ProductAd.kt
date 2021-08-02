@@ -17,7 +17,7 @@ data class ProductAds(
 )
 
 /**
- * ProductAd
+ * ProductAd Object
  */
 @Parcelize
 @Root(name="ad", strict = false)

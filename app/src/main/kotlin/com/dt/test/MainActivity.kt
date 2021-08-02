@@ -5,6 +5,9 @@ import android.os.Bundle
 import com.dt.test.Constants.SPLASH_DELAY
 import kotlinx.android.synthetic.main.activity_main_splash.*
 
+/**
+ * Display splash screen and then display product ads fragment
+ */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

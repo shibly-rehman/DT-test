@@ -14,6 +14,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+/**
+ * ViewModel to handle product ads call
+ */
 class ProductAdsViewModel: ViewModel(), Callback<ProductAds> {
 
     private val data = MutableLiveData<ProductAds>()

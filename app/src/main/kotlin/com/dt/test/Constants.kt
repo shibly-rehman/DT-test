@@ -1,5 +1,8 @@
 package com.dt.test
 
+/**
+ * Global app constants
+ */
 object Constants {
     const val TAG = "DT-Test"
 

@@ -7,7 +7,7 @@ import retrofit2.converter.simplexml.SimpleXmlConverterFactory
 import java.util.concurrent.TimeUnit
 
 /**
- * ApiFactory.
+ * Configurations for retrofit.
  */
 object ApiFactory {
 

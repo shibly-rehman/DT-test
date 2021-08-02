@@ -18,13 +18,24 @@ import kotlinx.android.synthetic.main.item_product.view.*
  */
 class ProductAdsAdapter(val itemClick: (ProductAd) -> Unit): ListAdapter<ProductAd, ProductAdsViewHolder>(DIFF_CALLBACK) {
 
+    /**
+     * Inflate product ad item row
+     */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         ProductAdsViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_product, parent, false))
 
+    /**
+     * Binds ViewHolder and Data
+     */
     override fun onBindViewHolder(holder: ProductAdsViewHolder, index: Int) = holder.bind(getItem(index))
 
-    /** ViewHolder that binds product ads view */
+    /**
+     * ViewHolder that displays product ads view
+     */
     inner class ProductAdsViewHolder(override val containerView: View): RecyclerView.ViewHolder(containerView), LayoutContainer {
+        /**
+         * Binds product ad data
+         */
         fun bind(productAd: ProductAd) {
             containerView.apply {
                 name.text = productAd.name

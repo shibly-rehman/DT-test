@@ -6,10 +6,13 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 /**
- * ApiService.
+ * Retrofit api calls interface.
  */
 interface ApiService {
 
+    /**
+     * Call to get product ads
+     */
     @GET("getAds")
     fun getProductAds(
         @Query("id") id: String = "236",
